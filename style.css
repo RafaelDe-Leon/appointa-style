@@ -1,6 +1,7 @@
 /* body css */
 
 body {
+    overflow-x: hidden;
     background: url("./design/Group\ 20.jpg");
     background-repeat: no-repeat;
     background-size: cover;
