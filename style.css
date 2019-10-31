@@ -146,7 +146,7 @@ a:hover {
 .button-control {
     margin: 5px 0px 10px 0px;
     width: 400px;
-    padding: 15px;
+    padding: 15px 10px;
     background-color: #3961CF;
 }
 
@@ -161,9 +161,17 @@ a:hover {
 
 /* controls links without a button */
 
+.link-control {
+    margin-top: 10px;
+}
+
 .link-control a {
     color: #3961CF;
     text-decoration: none;
+}
+
+.link-control a:hover {
+    color: white;
 }
 
 
