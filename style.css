@@ -1,0 +1,13 @@
+body {
+    background-color: lightgrey;
+    
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.arrow-control {
+    float: right;
+}
