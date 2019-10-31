@@ -40,6 +40,7 @@ input {
     width: 1000px;
     height: 100%;
     color: grey;
+    padding-left: 40px;
     padding-top: 30px;
     padding-bottom: 10px;
     border: none;
