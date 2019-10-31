@@ -1,13 +1,106 @@
 body {
-    background-color: lightgrey;
-    
+    /* background-color: lightgrey; */
 }
 
 li {
     list-style-type: none;
 }
 
+input {
+    box-shadow: none;
+}
 
-.arrow-control {
-    float: right;
+
+/* section b */
+
+.section-b-control {
+    margin-top: 100px;
+}
+
+
+/* icon control */
+
+.icon-control {
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+}
+
+
+/* form animations */
+
+.form {
+    /* width: 80%; */
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.form input {
+    width: 1000px;
+    height: 100%;
+    color: grey;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border: none;
+    outline: none;
+}
+
+.form label {
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.form label::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #6a8fdd;
+    transform: translate(-150%);
+    transition: transform 0.3s ease;
+}
+
+.content-text {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.form input:focus+.label-name .content-text,
+.form input:valid+.label-name .content-text {
+    transform: translateY(-150%);
+    font-size: 15px;
+    color: #3961CF;
+}
+
+.form input:focus+.label-name::after,
+.form input:valid+.label-name::after {
+    transform: translateX(0%);
+}
+
+
+/* section c */
+
+.button-control {
+    margin: 10px 0;
+    width: 400px;
+    padding: 15px;
+}
+
+#section-c .link-control {
+    text-decoration: none;
+    margin: 10px 0px;
+}
+
+.letssee {
+    border: 1px solid red;
 }
